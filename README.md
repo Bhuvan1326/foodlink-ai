@@ -1,73 +1,147 @@
-# Welcome to your Lovable project
+# FoodLink AI  
+### AI-Powered Food Waste Reduction & Smart Donation Platform  
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview  
 
-## How can I edit this code?
+**FoodLink AI** is an intelligent food redistribution platform that connects **Restaurants, NGOs, and Volunteers** to reduce food waste and fight hunger.
 
-There are several ways of editing your application.
+Using AI-driven waste prediction, the system identifies high-risk food items before they expire and makes them available for donation. NGOs can request pickups, and volunteers complete delivery missions — creating a real-time, transparent, and scalable food rescue ecosystem.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Demo Video  
 
-Changes made via Lovable will be committed automatically to this repo.
+**Project Demo Video:**  
+https://drive.google.com/drive/u/1/folders/1067iTChoVzlzChzqpP0AvHnwUV9RF2XC?q=sharedwith:public%20parent:1067iTChoVzlzChzqpP0AvHnwUV9RF2XC  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Live Deployment  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Live Website:**  
+https://foodlink-ai.vercel.app  
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Key Features  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🍽 Restaurant Dashboard  
+- Add food items with expiry & demand level  
+- AI-powered waste prediction  
+- Automatic donation creation for high-risk items  
+- Manual donation option  
+- Real-time status updates  
 
-# Step 3: Install the necessary dependencies.
-npm i
+### NGO Dashboard  
+- View available donations  
+- Request pickup  
+- Auto-creation of delivery mission  
+- Real-time notifications  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Volunteer Dashboard  
+- View pending delivery missions  
+- Accept mission  
+- Mark as completed  
+- Real-time tracking  
 
-**Edit a file directly in GitHub**
+### AI Integration  
+- Predicts food waste probability  
+- Suggests actionable recommendations  
+- Smart decision support  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## System Architecture  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Workflow:**
 
-## What technologies are used for this project?
+1. Restaurant adds food item  
+2. AI predicts waste probability  
+3. High-risk items become available donations  
+4. NGO requests pickup  
+5. Delivery mission is created  
+6. Volunteer completes delivery  
+7. Impact stats update  
 
-This project is built with:
+---
 
+## 🛠 Technology Stack  
+
+### Frontend
+- React.js (TypeScript)
 - Vite
-- TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
+- shadcn/ui
+- Radix UI
 
-## How can I deploy this project?
+### Backend & Database
+- Supabase (PostgreSQL)
+- Supabase Authentication
+- Row Level Security (RLS)
+- Realtime subscriptions
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### APIs & Edge Functions
+- Supabase Edge Functions (Deno runtime)
+- AI API Integration
 
-## Can I connect a custom domain to my Lovable project?
+### State Management
+- TanStack React Query
 
-Yes, you can!
+### Deployment
+- Vercel
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Role-Based Access  
+
+The system uses secure role-based authentication:
+
+- restaurant
+- ngo
+- volunteer
+
+Row Level Security ensures users can only access data relevant to their role.
+
+---
+
+## Impact  
+
+FoodLink AI creates measurable impact by:
+
+- Reducing food waste  
+- Preventing unnecessary carbon emissions  
+- Supporting NGOs with timely donations  
+- Creating structured volunteer engagement  
+- Promoting sustainable food redistribution  
+
+---
+
+## Problem Statement  
+
+Food waste is a major global issue while millions suffer from hunger. Restaurants often discard edible food due to lack of coordination and visibility.
+
+FoodLink AI solves this by creating a structured, AI-assisted, real-time food donation ecosystem.
+
+---
+
+## Future Enhancements  
+
+- Live GPS tracking  
+- NGO auto-matching using distance algorithm  
+- Advanced analytics dashboard  
+- SMS notifications  
+- Government & CSR integration  
+
+---
+
+  
+
+## Why FoodLink AI?  
+
+✔ Real-time  
+✔ AI-powered  
+✔ Role-based secure system  
+✔ Scalable architecture  
+✔ Social impact driven  
