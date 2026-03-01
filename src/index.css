@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 40% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 8%;
+
+    --primary: 160 59% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 93%;
+    --secondary-foreground: 220 40% 15%;
+
+    --muted: 210 15% 93%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 160 59% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 40% 8%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 160 59% 40%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 210 20% 97%;
+    --sidebar-foreground: 220 30% 20%;
+    --sidebar-primary: 160 59% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 93%;
+    --sidebar-accent-foreground: 220 30% 20%;
+    --sidebar-border: 214 20% 90%;
+    --sidebar-ring: 160 59% 40%;
+
+    --success: 160 59% 40%;
+    --info: 210 80% 55%;
+
+    /* Role-specific accent tokens (overridden by theme classes) */
+    --role-primary: 160 59% 40%;
+    --role-primary-foreground: 0 0% 100%;
+    --role-secondary: 160 40% 94%;
+    --role-icon: 215 16% 47%;
+    --role-header-bg: 220 40% 8%;
+    --role-header-fg: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 220 20% 7%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 160 59% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 160 50% 40%;
+    --accent-foreground: 210 20% 95%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 80% 45%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 160 59% 45%;
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 160 59% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 160 59% 45%;
+  }
+
+  /* Dashboard role themes */
+  .theme-restaurant {
+    --role-primary: 160 59% 40%;
+    --role-primary-foreground: 0 0% 100%;
+    --role-secondary: 214 32% 91%;
+    --role-icon: 215 16% 47%;
+    --role-header-bg: 217 33% 17%;
+    --role-header-fg: 214 32% 91%;
+  }
+
+  .theme-ngo {
+    --role-primary: 175 83% 32%;
+    --role-primary-foreground: 0 0% 100%;
+    --role-secondary: 166 76% 94%;
+    --role-icon: 175 83% 32%;
+    --role-header-bg: 175 83% 32%;
+    --role-header-fg: 0 0% 100%;
+  }
+
+  .theme-volunteer {
+    --role-primary: 239 84% 58%;
+    --role-primary-foreground: 0 0% 100%;
+    --role-secondary: 226 100% 97%;
+    --role-icon: 232 65% 71%;
+    --role-header-bg: 239 84% 58%;
+    --role-header-fg: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
